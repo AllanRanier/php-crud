@@ -29,23 +29,22 @@
             </thead>
                 <?php
                 include 'conexao.php';
-                $slq = "SELECT * FROM `estoque`";
+                $sql = "SELECT * FROM estoque";
                 $busca = mysqli_query($conexao, $sql);
 
+                if(mysqli_num_rows($busca) > 0 ){
+                while ($linha = mysqli_fetch_assoc($busca)) {
+                    $id_estoque = $linha["id_estoque"];
 
-                while ($array = mysqli_fetch_array($busca)) {
-                    $id_estoque = $array['id_estoque'];
-                    $nrlivro = $array['nrlivro'];
-                    $nomelivro = $array['nomelivro'];
-                    $genero = $array['genero'];
-                    $autor = $array['autor'];
                 ?>
                     <tr>
-                        <td><?php echo $nrlivro; ?></td>
-                        <td><?php echo $nomelivro; ?></td>
-                        <td><?php echo $genero; ?></td>
-                        <td><?php echo $autor; ?></td>
-                    <?php } ?>
+                        <td><?php echo $linha["nrlivro"]; ?></td>
+                        <td><?php echo $linha['nomelivro']; ?></td>
+                        <td><?php echo $linha['genero']; ?></td>
+                        <td><?php echo $linha['autor'];?></td>
+                    <?php } 
+                    }
+                    ?>
                     </tr>
 
         </table>
