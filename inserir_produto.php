@@ -1,5 +1,5 @@
 <?php
-include'conexao.php';
+include 'conexao.php';
 
 $nrolivro = $_POST['nrolivro'];
 $nomelivro = $_POST['nomelivro'];
@@ -18,7 +18,7 @@ $inserir = mysqli_query($conexao,$sql);
     </center>
     <div style="padding-top: 20px;">
     <center>
-        <a href="index.php" role="button" class="btn btn-sm btn-primary">Cadastrar novo ítem</a>
+        <a href="adicionar_produto.php" role="button" class="btn btn-sm btn-primary">Cadastrar novo ítem</a>
     </center>
     </div>
 </div>

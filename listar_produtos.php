@@ -16,7 +16,10 @@
 <body>
 
     <div class="container" style="margin-top: 40px;">
-        <h3>Lista de Produtos</h3>
+        <div style="text-align: right;">
+            <a href="index.php" role="button" class="btn btn-small btn-primary">Voltar</a>
+        </div>
+        <h3>Lista dos Livros</h3>
         <br>
         <table class="table">
             <thead>
@@ -25,27 +28,35 @@
                     <th scope="col">Nome</th>
                     <th scope="col">Gênero</th>
                     <th scope="col">Autor</th>
+                    <th scope="col">AÇão</th>
                 </tr>
             </thead>
-                <?php
-                include 'conexao.php';
-                $sql = "SELECT * FROM estoque";
-                $busca = mysqli_query($conexao, $sql);
+            <?php
+            include 'conexao.php';
+            $sql = "SELECT * FROM estoque";
+            $busca = mysqli_query($conexao, $sql);
 
-                if(mysqli_num_rows($busca) > 0 ){
+            if (mysqli_num_rows($busca) > 0) {
                 while ($linha = mysqli_fetch_assoc($busca)) {
                     $id_estoque = $linha["id_estoque"];
+                    $nrprodutos = $linha["nrlivro"];
+                    $nomelivro = $linha["nomelivro"];
+                    $genero = $linha["genero"];
+                    $autor = $linha["autor"];
 
-                ?>
+
+            ?>
                     <tr>
                         <td><?php echo $linha["nrlivro"]; ?></td>
                         <td><?php echo $linha['nomelivro']; ?></td>
                         <td><?php echo $linha['genero']; ?></td>
-                        <td><?php echo $linha['autor'];?></td>
-                    <?php } 
-                    }
-                    ?>
+                        <td><?php echo $linha['autor']; ?></td>
+                        <td><a class="btn btn-warning btn-sm" style="color: #fff" href="editar_produto.php?id=<?php echo $id_estoque ?>" role="button"><i class="fas fa-edit"></i> Editar</a>
+                            <a class="btn btn-danger btn-sm" style="color: #fff" href="deletar_produto.php?id=<?php echo $id_estoque ?>" role="button"><i class="fas fa-trash-alt"> Excluir</i></td>
                     </tr>
+            <?php }
+            }
+            ?>
 
         </table>
 
