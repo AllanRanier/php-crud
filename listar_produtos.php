@@ -28,7 +28,7 @@
                     <th scope="col">Nome</th>
                     <th scope="col">Gênero</th>
                     <th scope="col">Autor</th>
-                    <th scope="col">AÇão</th>
+                    <th scope="col">Ação</th>
                 </tr>
             </thead>
             <?php
