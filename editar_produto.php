@@ -23,6 +23,9 @@ $id = $_GET['id'];
   </head>
   <body>
     <div class="container" id="tamanhoContainer">
+    <div style="text-align: right;">
+      <a href="listar_produtos.php" role="button" class="btn btn-small btn-primary">Voltar</a>
+    </div>
       <h4>Formulário de Edição</h4>
       <form action="atualizar_produto.php" method="POST" style="margin-top: 20px;" >
       <?php 
