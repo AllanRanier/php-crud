@@ -1,6 +1,6 @@
 
 # PHP-Crud
-Crud Devenvolvido por:
+Crud Desenvolvido por:
   <br>Allan Ranier,<br>
   Larissa Rafaely,<br>
   Micaelly Pereira,<br>
@@ -9,7 +9,7 @@ Crud Devenvolvido por:
   Sistema para um trabalho da faculdade.<br>
 
   O Crud é baseado em um sistema de cadastro de livro para uma biblioteca.<br>
-  as tecnologia usada para o deselvovimento do crud foi:<br>
+  as tecnologia usada para o desenvolvimento do crud foi:<br>
   HTML,<br>
   CSS,<br>
   PHP,<br>
