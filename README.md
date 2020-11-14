@@ -4,6 +4,7 @@ Crud Devenvolvido por:
   <br>Allan Ranier,<br>
   Larissa Rafaely,<br>
   Micaelly Pereira,<br>
+  Nadson Batista,<br>
   Iclair Viana.<br>
   Sistema para um trabalho da faculdade.<br>
 
