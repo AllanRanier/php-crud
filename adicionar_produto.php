@@ -24,19 +24,19 @@
     <form action="inserir_produto.php" method="POST" style="margin-top: 20px;">
       <div class="form-group">
         <label>Nro do Livro</label>
-        <input type="number" class="form-control" name="nrolivro" placeholder="Insira o numero do livro" autocomplete="off" required>
+        <input type="number" class="form-control" name="nrolivro" placeholder="Numero do livro" autocomplete="off" required>
       </div>
       <div class="form-group">
         <label>Nome do Livro</label>
-        <input type="text" class="form-control" name="nomelivro" placeholder="Insira o nome do livro" autocomplete="off" required>
+        <input type="text" class="form-control" name="nomelivro" placeholder="Nome do livro" autocomplete="off" required>
       </div>
       <div class="form-group">
         <label>Gênero</label>
-        <input type="text" class="form-control" name="genero" placeholder="Insira o gênero do livro" autocomplete="off" required>
+        <input type="text" class="form-control" name="genero" placeholder="Gênero do livro" autocomplete="off" required>
       </div>
       <div class="form-group">
         <label>Autor</label>
-        <input type="text" class="form-control" name="autor" placeholder="Insira o autor do livro" autocomplete="off" required>
+        <input type="text" class="form-control" name="autor" placeholder="Autor do livro" autocomplete="off" required>
       </div>
       <div style="text-align: right;">
         <button type="submit" id="botao" class="btn btn-small">Cadastrar</button>

@@ -20,7 +20,6 @@
             <a href="index.php" role="button" class="btn btn-small btn-primary">Voltar</a>
         </div>
         <h3>Lista dos Livros</h3>
-        <br>
         <table class="table">
             <thead>
                 <tr>
@@ -51,8 +50,9 @@
                         <td><?php echo $linha['nomelivro']; ?></td>
                         <td><?php echo $linha['genero']; ?></td>
                         <td><?php echo $linha['autor']; ?></td>
-                        <td><a class="btn btn-warning btn-sm" style="color: #fff" href="editar_produto.php?id=<?php echo $id_estoque ?>" role="button"><i class="fas fa-edit"></i> Editar</a>
-                            <a class="btn btn-danger btn-sm" style="color: #fff" href="deletar_produto.php?id=<?php echo $id_estoque ?>" role="button"><i class="fas fa-trash-alt"> Excluir</i></td>
+                        <td><a class="btn btn-warning btn-sm" style="color: #fff" href="editar_produto.php?id=<?php echo $id_estoque ?>" role="button"><i class="fas fa-edit"></i>  Editar</a>
+                            <a class="btn btn-danger btn-sm" style="color: #fff" href="deletar_produto.php?id=<?php echo $id_estoque ?>" role="button"><i class="fas fa-trash-alt"></i>  Excluir</a>
+                        </td>
                     </tr>
             <?php }
             }

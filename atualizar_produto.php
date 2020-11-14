@@ -9,14 +9,13 @@ $genero = $_POST['genero'];
 $autor = $_POST['autor'];
 
 $sql = "UPDATE `estoque` SET `nomelivro`='$nomelivro',`genero`='$genero',`autor`='$autor' WHERE id_estoque = $id";
-$atualizar = mysqli_query($conexao,$sql)
+$atualizar = mysqli_query($conexao,$sql);
 
+
+if($atualizar){
+	echo "<script>alert('Atualizados com sucesso!'); location= './listar_produtos.php';</script>";
+}else{
+	echo "<script>alert('Erro!'); location= './listar_produtos.php';</script>";
+}
 
 ?>
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-<div class="container" style="width: 400px;">
-    <script>
-	alert('Atualizados com sucesso!'); location= './listar_produtos.php';
-	</script>"
-</div>
