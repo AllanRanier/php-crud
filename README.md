@@ -1,3 +1,4 @@
+
 # PHP-Crud
 Crud Devenvolvido por:
   <br>Allan Ranier<br>
@@ -15,4 +16,4 @@ Crud Devenvolvido por:
   
 
 # Review
-<img src="http://g.recordit.co/MyBX837zny.gif" width="950" height="950"  />
+<img src="http://g.recordit.co/MyBX837zny.gif" width="950" height="500"  />
