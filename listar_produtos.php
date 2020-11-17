@@ -15,6 +15,17 @@
 
 <body>
 
+<?php
+session_start();
+$usuario = $_SESSION['usuario'];
+
+
+if(!isset($_SESSION['usuario'])){
+    header('Location: index.php');
+}
+
+?>
+
     <div class="container" style="margin-top: 40px;">
         <div style="text-align: right;">
             <a href="menu.php" role="button" class="btn btn-small btn-primary">Voltar</a>

@@ -22,6 +22,16 @@ $id = $_GET['id'];
 
   </head>
   <body>
+  <?php
+  session_start();
+  $usuario = $_SESSION['usuario'];
+
+
+  if(!isset($_SESSION['usuario'])){
+      header('Location: index.php');
+  }
+
+  ?>
     <div class="container" id="tamanhoContainer">
     <div style="text-align: right;">
       <a href="listar_produtos.php" role="button" class="btn btn-small btn-primary">Voltar</a>

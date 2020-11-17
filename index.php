@@ -20,7 +20,7 @@
                 <center>
                     <img src="imagens/cateado.png" style="width:125px; height:125px;">
                 </center>
-                <form  action="index1.php" method="POST">
+                <form  action="login.php" method="POST">
                     <div class="form-group">
                         <label>Usuário</label>
                         <input type="text" name="usuario" class="form-control"  autocomplete="off" required>
