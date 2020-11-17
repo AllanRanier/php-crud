@@ -18,8 +18,9 @@
         <div class="container" id="tamanho">
             <div style="padding: 10px;">
                 <center>
-                    <img src="imagens/cateado.png" style="width:125px; height:125px;">
+                    <img src="image/cateado.png" style="width:125px; height:125px;">
                 </center>
+
                 <form  action="login.php" method="POST">
                     <div class="form-group">
                         <label>Usuário</label>
@@ -33,6 +34,7 @@
                         <button type="submit" value="Confirmar"  class="btn btn-group-toggle btn-success">Entrar</button>
                     </div>
                 </form>
+                
             </div>
         </div>
     </div>
