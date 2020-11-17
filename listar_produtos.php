@@ -17,7 +17,7 @@
 
     <div class="container" style="margin-top: 40px;">
         <div style="text-align: right;">
-            <a href="index.php" role="button" class="btn btn-small btn-primary">Voltar</a>
+            <a href="menu.php" role="button" class="btn btn-small btn-primary">Voltar</a>
         </div>
         <h3>Lista dos Livros</h3>
         <table class="table">

@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/editar_style.css">
   <script src="https://kit.fontawesome.com/111db99c8a.js" crossorigin="anonymous"></script>
   <title>Cadastro</title>
 
@@ -18,7 +18,7 @@
 <body>
   <div class="container" id="tamanhoContainer">
     <div style="text-align: right;">
-      <a href="index.php" role="button" class="btn btn-small btn-primary">Voltar</a>
+      <a href="menu.php" role="button" class="btn btn-small btn-primary">Voltar</a>
     </div>
     <h4>Formulário de Cadastro</h4>
     <form action="inserir_produto.php" method="POST" style="margin-top: 20px;">
