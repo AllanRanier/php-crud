@@ -16,34 +16,37 @@
 
 <body>
 
-<?php
-session_start();
-$usuario = $_SESSION['usuario'];
+    <?php
+    session_start();
+    $usuario = $_SESSION['usuario'];
 
 
-if(!isset($_SESSION['usuario'])){
-    header('Location: index.php');
-}
+    if (!isset($_SESSION['usuario'])) {
+        header('Location: index.php');
+    }
 
-?>
+    ?>
     <div class="container" style="margin-top: 100px;">
         <div class="row">
             <div class="col-sm-6">
                 <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Adicionar Livros</h5>
-                        <p class="card-text">Opção para adicionar livros em nossa biblioteca.</p>
-                        <a href="adicionar_produto.php" class="btn btn-primary">Cadastrar Livros</a>
-                    </div>
+                    <a href="adicionar_produto.php" class="btn btn-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">Adicionar Livros</h5>
+                            <p class="card-text">Opção para adicionar livros em nossa biblioteca.</p>
+
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Listas dos Livros</h5>
-                        <p class="card-text">Visualizar, editar e excluir os livros.</p>
-                        <a href="listar_produtos.php" class="btn btn-primary">Livros</a>
-                    </div>
+                    <a href="listar_produtos.php" class="btn btn-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">Listas dos Livros</h5>
+                            <p class="card-text">Visualizar, editar e excluir os livros.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
